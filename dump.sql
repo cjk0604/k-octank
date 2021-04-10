@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS apparels;
 CREATE TABLE IF NOT EXISTS apparels (
-	id	INT PRIMARY KEY AUTO_INCREMENT AUTO_INCREMENT UNIQUE,
+	id INT PRIMARY KEY UNIQUE,
 	name	TEXT,
 	description	TEXT,
 	img_url	TEXT,
@@ -35,7 +35,7 @@ INSERT INTO apparels VALUES(23,'Camp Stool',replace('<p><p><em>This is a demonst
 INSERT INTO apparels VALUES(24,'Hudderton Backpack',replace('<p><p><em>This is a demonstration store. You can purchase products like this from <a href=http://unitedbyblue.com/ target=_blank>United By Blue</a>.</em></p>\n<p>Durable, rugged, and dependable designed with four zipper compartments. Two bellowed front pockets allow for easy access to smaller items, one large, spacious compartment with a padded laptop sleeve, and a tiny convenient pouch on top to keep keys and other small items secure. The Hudderton is built with organic downpour proof canvas, a durable full grain leather bottom to prevent wear and tear, and padded canvas shoulder straps for all-day comfort. From the commute to the trail the Hudderton is perfect for bag for the entire week.</p>\n<ul>\n<li><span style=line-height: 1.4;>100% organic waxed 18 oz canvas</span></li>\n<li><span style=line-height: 1.4;>Full grain genuine leather detail</span></li>\n<li><span style=line-height: 1.4;>Soft interior cotton lining</span></li>\n<li><span style=line-height: 1.4;>Brass hardware and YKK zippers</span></li>\n<li><span style=line-height: 1.4;>Cotton Padded interior laptop sleeve</span></li>\n<li>Lifetime Guarantee</li>\n</ul>\n<ul class=tabs-content></ul></p>','\n',char(10)),'https://cdn.shopify.com/s/files/1/0803/6591/products/hudderton-backpack_dc8afb13-448b-49d9-a042-5a163a97de8f.jpg?v=1426709346','Bags',8,70.950000000000002843);
 DROP TABLE IF EXISTS bicycles;
 CREATE TABLE IF NOT EXISTS bicycles (
-	id	INT PRIMARY KEY AUTO_INCREMENT AUTO_INCREMENT UNIQUE,
+	id	INT PRIMARY KEY UNIQUE,
 	name	TEXT,
 	description	TEXT,
 	img_url	TEXT,
@@ -329,7 +329,7 @@ INSERT INTO bicycles VALUES(282,'DZR Mechanic',replace('<p><p><em>This is a demo
 INSERT INTO bicycles VALUES(283,'DZR Minna',replace('<p><p><em>This is a demonstration store. You can purchase products like this from <a href=https://www.purefixcycles.com target=_blank>Pure Fix Cycles</a></em></p><p>DZR’s all-time best seller, the Minna is proudly named after the gritty S.F. alley their showroom calls home. Understated tones, locally designed graphics, and a Variable Flex Shank combine to create a sneaker that’s as classic in its style as it is comfortable mashing on pedals.</p>\n<div class=textile>\n<h3>Specs</h3>\n<ul>\n<li>Variable flex shank for riding performance and walking comfort</li>\n<li>Full-grain leather</li>\n<li>Reflective heel badge for visibility</li>\n<li>Elastic lace catch</li>\n<li>Natural gum rubber sole for grip</li>\n<li>Link traction outsole for grip</li>\n<li>Two-hole cleat compatible</li>\n</ul>\n</div></p>','\n',char(10)),'https://cdn.shopify.com/s/files/1/0923/8062/products/DZR_MINNA_PAIR_FRONT_WEB.jpeg?v=1438624403','Accessories, Apparel, Shoes',49,176.94999999999998863);
 DROP TABLE IF EXISTS fashion;
 CREATE TABLE IF NOT EXISTS fashion (
-	id	INT PRIMARY KEY AUTO_INCREMENT AUTO_INCREMENT UNIQUE,
+	id	INT PRIMARY KEY UNIQUE,
 	name	TEXT,
 	description	TEXT,
 	img_url	TEXT,
@@ -1336,7 +1336,7 @@ INSERT INTO fashion VALUES(995,'Classic Brogue','<p><p>The Classic Brogue in Bla
 INSERT INTO fashion VALUES(996,'Tonny Belt','<p><p></p></p>','','AW15, black, copy, laydown shoot, unisex',67,19.949999999999999289);
 DROP TABLE IF EXISTS jewelry;
 CREATE TABLE IF NOT EXISTS jewelry (
-	id	INT PRIMARY KEY AUTO_INCREMENT AUTO_INCREMENT UNIQUE,
+	id	INT PRIMARY KEY UNIQUE,
 	name	TEXT,
 	description	TEXT,
 	img_url	TEXT,
