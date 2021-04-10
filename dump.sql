@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS apparels;
 CREATE TABLE IF NOT EXISTS apparels (
-	id	integer PRIMARY KEY AUTO_INCREMENT AUTO_INCREMENT UNIQUE,
-	name	text,
-	description	text,
-	img_url	text,
-	category	text,
-	inventory	integer,
-	price	number
+	id	INT PRIMARY KEY AUTO_INCREMENT AUTO_INCREMENT UNIQUE,
+	name	TEXT,
+	description	TEXT,
+	img_url	TEXT,
+	category	TEXT,
+	inventory	INT,
+	price	DOUBLE
 );
 INSERT INTO apparels VALUES(0,'The Scout Skincare Kit',replace('<p><p><em>This is a demonstration store. You can purchase products like this from <a href=http://unitedbyblue.com/ target=_blank>United By Blue</a>.</em></p><meta charset=utf-8>\n<p><span>A collection of the best Ursa Major has to offer! The Scout kit contains travel sizes of their best selling skin care items including: </span></p>\n<ul>\n<li><span style=line-height: 1.4;>Face Wash (2 fl oz)</span></li>\n<li><span style=line-height: 1.4;>Shave Cream (2 fl oz)</span></li>\n<li><span style=line-height: 1.4;>Face Balm (0.5 fl oz)</span></li>\n<li><span style=line-height: 1.4;>5 tonic-infused bamboo Face Wipes</span></li>\n</ul>\n<p><span>All wrapped together in a great, reusable tin.</span><span class=aam> </span></p></p>','\n',char(10)),'https://cdn.shopify.com/s/files/1/0803/6591/products/skin-care_c18143d5-6378-46aa-b0d7-526aee3bc776.jpg?v=1426708827','',0,13.949999999999999289);
 INSERT INTO apparels VALUES(1,'Ayres Chambray',replace('<p><p><em>This is a demonstration store. You can purchase products like this from <a href=http://unitedbyblue.com/ target=_blank>United By Blue</a>.</em></p>\n<p>Comfortable and practical, our chambray button down is perfect for travel or days spent on the go. The Ayres Chambray has a rich, washed out indigo color suitable to throw on for any event. Made with sustainable soft chambray featuring two chest pockets with sturdy and scratch resistant corozo buttons.</p>\n<ul class=tabs-content>\n<li><span style=line-height: 1.4;>100% Organic Cotton Chambray, 4.9 oz Fabric.</span></li>\n<li><span style=line-height: 1.4;>Natural Corozo Buttons.</span></li>\n</ul></p>','\n',char(10)),'https://cdn.shopify.com/s/files/1/0803/6591/products/chambray_5f232530-4331-492a-872c-81c225d6bafd.jpg?v=1426630717','Shirts',64,198.94999999999998862);
@@ -35,13 +35,13 @@ INSERT INTO apparels VALUES(23,'Camp Stool',replace('<p><p><em>This is a demonst
 INSERT INTO apparels VALUES(24,'Hudderton Backpack',replace('<p><p><em>This is a demonstration store. You can purchase products like this from <a href=http://unitedbyblue.com/ target=_blank>United By Blue</a>.</em></p>\n<p>Durable, rugged, and dependable designed with four zipper compartments. Two bellowed front pockets allow for easy access to smaller items, one large, spacious compartment with a padded laptop sleeve, and a tiny convenient pouch on top to keep keys and other small items secure. The Hudderton is built with organic downpour proof canvas, a durable full grain leather bottom to prevent wear and tear, and padded canvas shoulder straps for all-day comfort. From the commute to the trail the Hudderton is perfect for bag for the entire week.</p>\n<ul>\n<li><span style=line-height: 1.4;>100% organic waxed 18 oz canvas</span></li>\n<li><span style=line-height: 1.4;>Full grain genuine leather detail</span></li>\n<li><span style=line-height: 1.4;>Soft interior cotton lining</span></li>\n<li><span style=line-height: 1.4;>Brass hardware and YKK zippers</span></li>\n<li><span style=line-height: 1.4;>Cotton Padded interior laptop sleeve</span></li>\n<li>Lifetime Guarantee</li>\n</ul>\n<ul class=tabs-content></ul></p>','\n',char(10)),'https://cdn.shopify.com/s/files/1/0803/6591/products/hudderton-backpack_dc8afb13-448b-49d9-a042-5a163a97de8f.jpg?v=1426709346','Bags',8,70.950000000000002843);
 DROP TABLE IF EXISTS bicycles;
 CREATE TABLE IF NOT EXISTS bicycles (
-	id	integer PRIMARY KEY AUTO_INCREMENT AUTO_INCREMENT UNIQUE,
-	name	text,
-	description	text,
-	img_url	text,
-	category	text,
-	inventory	integer,
-	price	number
+	id	INT PRIMARY KEY AUTO_INCREMENT AUTO_INCREMENT UNIQUE,
+	name	TEXT,
+	description	TEXT,
+	img_url	TEXT,
+	category	TEXT,
+	inventory	INT,
+	price	DOUBLE
 );
 INSERT INTO bicycles VALUES(0,'15mm Combo Wrench',replace('<p><p><em>This is a demonstration store. You can purchase products like this from <a href=https://www.purefixcycles.com target=_blank>Pure Fix Cycles</a></em></p><div id=tab-description class=tab-content>\n<p class=p1>This wrench packs a 10mm open-ended, 15mm pedal wrench &amp; 14x15mm sockets for crank fixing bolts and axle nuts. It''s constructed with CrMo steel and is the perfect wrench to keep your wheels and pedals on tight!</p>\n<p class=p1> </p>\n</div></p>','\n',char(10)),'https://cdn.shopify.com/s/files/1/0923/8062/products/15mm-icetoolz-combo-wrench_1.jpeg?v=1438626126','15mm, Accessories, Essential, Essentials, Safety Gear, Tool, Tools, Tools and Maintenance, Wheelsets and Accessories, Wrench',0,11.949999999999999289);
 INSERT INTO bicycles VALUES(1,'4mm 5mm 6mm Y-Wrench','<p><p><em>This is a demonstration store. You can purchase products like this from <a href=https://www.purefixcycles.com target=_blank>Pure Fix Cycles</a></em></p><p>This is arguably the best maintenance tool to carry as a rider. The 4mm, 5mm, 6mm Y-Wrench will tighten almost every single allen screw on your bike. It''s a cycling must!</p></p>','https://cdn.shopify.com/s/files/1/0923/8062/products/y-wrench.jpeg?v=1438626125','Accessories, Essential, Essentials, Safety Gear, Tool, Tools, Tools and Maintenance, Wrench',24,199.94999999999998863);
@@ -329,13 +329,13 @@ INSERT INTO bicycles VALUES(282,'DZR Mechanic',replace('<p><p><em>This is a demo
 INSERT INTO bicycles VALUES(283,'DZR Minna',replace('<p><p><em>This is a demonstration store. You can purchase products like this from <a href=https://www.purefixcycles.com target=_blank>Pure Fix Cycles</a></em></p><p>DZR’s all-time best seller, the Minna is proudly named after the gritty S.F. alley their showroom calls home. Understated tones, locally designed graphics, and a Variable Flex Shank combine to create a sneaker that’s as classic in its style as it is comfortable mashing on pedals.</p>\n<div class=textile>\n<h3>Specs</h3>\n<ul>\n<li>Variable flex shank for riding performance and walking comfort</li>\n<li>Full-grain leather</li>\n<li>Reflective heel badge for visibility</li>\n<li>Elastic lace catch</li>\n<li>Natural gum rubber sole for grip</li>\n<li>Link traction outsole for grip</li>\n<li>Two-hole cleat compatible</li>\n</ul>\n</div></p>','\n',char(10)),'https://cdn.shopify.com/s/files/1/0923/8062/products/DZR_MINNA_PAIR_FRONT_WEB.jpeg?v=1438624403','Accessories, Apparel, Shoes',49,176.94999999999998863);
 DROP TABLE IF EXISTS fashion;
 CREATE TABLE IF NOT EXISTS fashion (
-	id	integer PRIMARY KEY AUTO_INCREMENT AUTO_INCREMENT UNIQUE,
-	name	text,
-	description	text,
-	img_url	text,
-	category	text,
-	inventory	integer,
-	price	number
+	id	INT PRIMARY KEY AUTO_INCREMENT AUTO_INCREMENT UNIQUE,
+	name	TEXT,
+	description	TEXT,
+	img_url	TEXT,
+	category	TEXT,
+	inventory	INT,
+	price	DOUBLE
 );
 INSERT INTO fashion VALUES(0,'Delicious Camisole',replace('<p><meta charset=utf-8>\n<p>Lace trim accentuates the neckline of this lightweight Camisole by Only Hearts. 90% Nylon, 10% Lycra. Color Navy. <em>Lana is wearing a size Small. </em></p>\n<p><em><em>Also available in <a href=http://babyandco.us/products/s14-onl-li-5656-bone>Bone</a>, <a href=http://babyandco.us/products/s14-onl-li-3844-bronze>Bronze</a>, and <a href=http://babyandco.us/products/s14-onl-li-5656-black>Black</a>.</em></em></p>\n<meta charset=utf-8>\n<p><em><em><a href=http://babyandco.us/collections/only-hearts><span style=text-decoration: underline;><em>Shop our collection of Only Hearts.</em></span></a></em></em></p></p>','\n',char(10)),'https://cdn.shopify.com/s/files/1/0923/8036/products/2014_10_18_Lana_Look1101.jpeg?v=1437081385','arrivals, AW15, Camisole, F14, foundation, intimates, lace, Only Hearts, S14, signature, undergarment, visible, Woman',0,196.94999999999998862);
 INSERT INTO fashion VALUES(1,'Delicious Camisole',replace('<p><p><em>This is a demonstration store. You can purchase products like this from <a href=http://babyandco.us/ target=_blank>Baby &amp; Company</a></em></p><p>Lace trim accentuates the neckline of this lightweight Camisole by Only Hearts. 90% Nylon, 10% Lycra. Color Black. <em>Lana is wearing a size Small. </em></p>\n<p><em><em>Also available in <a href=http://babyandco.us/products/s14-onl-li-5656-bone>Bone</a>, <a href=http://babyandco.us/products/s14-onl-li-3844-bronze>Bronze</a>, and <a href=http://babyandco.us/products/s14-onl-li-4184l-navy>Navy</a>.</em></em></p>\n<meta charset=utf-8>\n<p><em><em><a href=http://babyandco.us/collections/only-hearts><span style=text-decoration: underline;><em>Shop our collection of Only Hearts.</em></span></a></em></em></p></p>','\n',char(10)),'https://cdn.shopify.com/s/files/1/0923/8036/products/2014_10_18_Lana_Look1402.jpeg?v=1437081378','arrivals, AW15, black, camisole, F14, foundation, intimates, Only Hearts, signature, top, undergarment, visible, Woman',52,67.950000000000002841);
@@ -1336,13 +1336,13 @@ INSERT INTO fashion VALUES(995,'Classic Brogue','<p><p>The Classic Brogue in Bla
 INSERT INTO fashion VALUES(996,'Tonny Belt','<p><p></p></p>','','AW15, black, copy, laydown shoot, unisex',67,19.949999999999999289);
 DROP TABLE IF EXISTS jewelry;
 CREATE TABLE IF NOT EXISTS jewelry (
-	id	integer PRIMARY KEY AUTO_INCREMENT AUTO_INCREMENT UNIQUE,
-	name	text,
-	description	text,
-	img_url	text,
-	category	text,
-	inventory	integer,
-	price	number
+	id	INT PRIMARY KEY AUTO_INCREMENT AUTO_INCREMENT UNIQUE,
+	name	TEXT,
+	description	TEXT,
+	img_url	TEXT,
+	category	TEXT,
+	inventory	INT,
+	price	DOUBLE
 );
 INSERT INTO jewelry VALUES(0,'14k Wire Bloom Earrings',replace('<p><div class=product-description rte itemprop=description>Sed in metus nec dui consequat vestibulum. In varius pretium nunc, sed bibendum mauris lacinia non. Praesent vel neque ut ligula porttitor vestibulum ac eu erat. Pellentesque quis turpis odio. Etiam auctor laoreet ligula, vel aliquam urna ornare sed. Praesent laoreet diam vitae lectus molestie pulvinar.</div>\n<div class=product-description rte itemprop=description>\n<ul>\n<li><span>Nullam blandit</span></li>\n<li><span>Vestibulum euismod</span></li>\n<li><span>Nullam venenatis </span></li>\n<li><span>Aenean a magna eros</span></li>\n</ul>\n</div></p>','\n',char(10)),'https://cdn.shopify.com/s/files/1/0597/2185/products/18k-rose-gold-wire-bloom-earrings_afcace12-edfb-4c82-aba0-11462409947f.jpg?v=1406749652','Rose Gold',0,157.94999999999998862);
 INSERT INTO jewelry VALUES(1,'14k Solid Bloom Earrings',replace('<p><div class=product-description rte itemprop=description>Sed in metus nec dui consequat vestibulum. In varius pretium nunc, sed bibendum mauris lacinia non. Praesent vel neque ut ligula porttitor vestibulum ac eu erat. Pellentesque quis turpis odio. Etiam auctor laoreet ligula, vel aliquam urna ornare sed. Praesent laoreet diam vitae lectus molestie pulvinar.</div>\n<div class=product-description rte itemprop=description>\n<ul>\n<li><span>Nullam blandit</span></li>\n<li><span>Vestibulum euismod</span></li>\n<li><span>Nullam venenatis </span></li>\n<li><span>Aenean a magna eros</span></li>\n</ul>\n</div></p>','\n',char(10)),'https://cdn.shopify.com/s/files/1/0597/2185/products/18k-rose-gold-solid-bloom-earrings_35415c7b-3053-4247-a017-f60f03ade244.jpg?v=1406749643','Rose Gold',38,197.94999999999998862);
@@ -1365,7 +1365,7 @@ INSERT INTO jewelry VALUES(17,'18k Bloom Earrings',replace('<p><div class=produc
 INSERT INTO jewelry VALUES(18,'18k Dangling Pendant Earrings',replace('<p><div class=product-description rte itemprop=description>Sed in metus nec dui consequat vestibulum. In varius pretium nunc, sed bibendum mauris lacinia non. Praesent vel neque ut ligula porttitor vestibulum ac eu erat. Pellentesque quis turpis odio. Etiam auctor laoreet ligula, vel aliquam urna ornare sed. Praesent laoreet diam vitae lectus molestie pulvinar.</div>\n<div class=product-description rte itemprop=description>\n<ul>\n<li><span style=line-height: 1.5;>Nullam blandit</span></li>\n<li><span style=line-height: 1.5;>Vestibulum euismod</span></li>\n<li><span style=line-height: 1.5;>Nullam venenatis </span></li>\n<li><span style=line-height: 1.5;>Aenean a magna eros</span></li>\n</ul>\n</div></p>','\n',char(10)),'https://cdn.shopify.com/s/files/1/0597/2185/products/18k-rose-gold-infinite-link-earrings.jpg?v=1406731712','Rose Gold',92,163.94999999999998863);
 DROP TABLE IF EXISTS User;
 CREATE TABLE IF NOT EXISTS User (
-	id	INTEGER PRIMARY KEY AUTO_INCREMENT,
+	id	INT PRIMARY KEY AUTO_INCREMENT,
 	fname	TEXT,
 	lname	TEXT,
 	email	TEXT,
